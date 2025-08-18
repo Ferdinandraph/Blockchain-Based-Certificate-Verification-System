@@ -12,6 +12,7 @@ const SenateHomePage = () => {
   ]);
   const [recentActivity, setRecentActivity] = useState([]);
   const { toast } = useToast();
+   const VITE_BACKEND_URI = import.meta.env.VITE_BACKEND_URI
 
   useEffect(() => {
     const fetchData = async () => {

@@ -34,6 +34,7 @@ const SenateIssueCertificate = () => {
   const { address, isConnected, isConnecting, isDisconnected } = useAccount();
   const chainId = useChainId();
   const { switchChainAsync } = useSwitchChain();
+   const VITE_BACKEND_URI = import.meta.env.VITE_BACKEND_URI
 
   const contractAddress = import.meta.env.VITE_CONTRACT_ADDRESS;
   const sepoliaChainId = 11155111;
