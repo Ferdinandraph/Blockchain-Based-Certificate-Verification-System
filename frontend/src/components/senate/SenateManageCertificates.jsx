@@ -12,6 +12,8 @@ const SenateManageCertificates = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState('all');
   const { toast } = useToast();
+  const VITE_BACKEND_URI = import.meta.env.VITE_BACKEND_URI
+  const VITE_FRONTEND_URI = import.meta.env.VITE_FRONTEND_URI
 
   useEffect(() => {
     const fetchCertificates = async () => {

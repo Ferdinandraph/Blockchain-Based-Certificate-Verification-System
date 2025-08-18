@@ -6,6 +6,7 @@ const SenateLoginForm = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const VITE_BACKEND_URI = import.meta.env.VITE_BACKEND_URI
 
   const handleSubmit = async (e) => {
     e.preventDefault();

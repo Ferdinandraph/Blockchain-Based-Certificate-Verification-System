@@ -18,6 +18,7 @@ const VerifierRegisterForm = () => {
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
   const { toast } = useToast();
+  const VITE_BACKEND_URI = import.meta.env.VITE_BACKEND_URI
 
   const handleSubmit = async (e) => {
     e.preventDefault();

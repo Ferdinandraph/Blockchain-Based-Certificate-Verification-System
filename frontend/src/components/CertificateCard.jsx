@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
+const VITE_BACKEND_URI = import.meta.env.VITE_BACKEND_URI
+const VITE_FRONTEND_URI = import.meta.env.VITE_FRONTEND_URI
+
 const CertificateCard = ({ certificate, userRole, onVerify, onRevoke, onDownload, onShare }) => {
   const getStatusColor = (status) => {
     return status === 'active'

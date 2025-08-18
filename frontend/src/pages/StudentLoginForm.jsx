@@ -6,6 +6,9 @@ const StudentLoginForm = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const VITE_BACKEND_URI = import.meta.env.VITE_BACKEND_URI
+  const VITE_CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS
+  const VITE_FRONTEND_URI = import.meta.env.VITE_FRONTEND_URI
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { sepolia } from 'wagmi/chains';
 import { createConfig, http, injected } from 'wagmi';
 
+const VITE_INFURIA_PROJECT_ID = import.meta.env.VITE_INFURIA_PROJECT_ID
 const config = createConfig({
   chains: [sepolia],
   connectors: [injected({ name: 'MetaMask' })],

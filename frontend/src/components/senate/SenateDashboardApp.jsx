@@ -13,6 +13,7 @@ const SenateDashboardApp = () => {
   const [currentPage, setCurrentPage] = useState('home');
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const navigate = useNavigate();
+  
 
   const navigation = [
     { name: 'Home', icon: Home, id: 'home' },

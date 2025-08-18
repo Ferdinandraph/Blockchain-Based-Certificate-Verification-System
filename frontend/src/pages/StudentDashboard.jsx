@@ -15,6 +15,8 @@ const StudentDashboard = () => {
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
   const navigate = useNavigate();
+  const VITE_BACKEND_URI = import.meta.env.VITE_BACKEND_URI
+  const VITE_FRONTEND_URI = import.meta.env.VITE_FRONTEND_URI
 
   useEffect(() => {
     const fetchData = async () => {
