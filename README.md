@@ -1,4 +1,5 @@
 FUTO Blockchain-Based Certificate Verification System
+
 This project is a decentralized platform for issuing, managing, and verifying academic certificates for the Federal University of Technology, Owerri (FUTO) using Ethereum's Sepolia testnet. It enables the FUTO Senate to issue secure, tamper-proof certificates, allows graduates to view and share them, and permits third parties (e.g., employers) to verify their authenticity, addressing challenges in traditional certificate systems like fraud, inefficiency, and inaccessibility.
 Table of Contents
 
